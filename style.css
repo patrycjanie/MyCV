@@ -1,7 +1,11 @@
-/*@import url('https://fonts.googleapis.com/css?family=Raleway');*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 body {
   margin: 0;
+  font-size: 16px;
+  line-height: 1.8em;
+  font-family: 'Raleway', sans-serif;
+
 }
 
 article {
@@ -20,32 +24,97 @@ header, main, footer {
 header {
   padding: 2em;
   text-align: center;
-  /*background-image: url('sciezka');*/
+  background-image: url('biurkobg.jpg');
+  background-size: cover;
+  background-position: 75% 25%;
 }
 
 header section {
   margin: 0 auto;
+  max-width: 635px;
+  text-align: justify;
 }
 
 header img {
-
+  max-width: 150px;
+  border-radius: 50%;
 }
 
 h1 {
   margin: 1em 0;
+  text-transform: uppercase;
 }
 
 main {
   max-width: 1140px;
+  border-bottom: 30px;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .course {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .course .title {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
 }
 
 .course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.course .descrition p {
+  padding-left: 2em;
+  margin-top: 0;
+}
+
+.skills h4 {
+  color: #509e98;
+  margin: 0;
+}
+
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+ul {
+  /*margin: 0;*/
+  margin: 0;  
+  padding: 0 1em;  
+  list-style: none;  
+}
+
+ul li:before { 
+  display:    inline-block;   
+  border-top:   solid transparent;
+  border-bottom:  solid transparent;
+  border-left: solid #509e98;; 
+  border-width: 6px;
+  content: ' ';
+  margin-right: 5px;
 }
 
 .school span {
