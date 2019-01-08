@@ -82,7 +82,7 @@ h3 {
   margin-top: 0;
 }
 
-.skills h4 {
+.skills h4, .languages h4 {
   color: #509e98;
   margin: 0;
 }
@@ -101,7 +101,6 @@ h3 {
 }
 
 ul {
-  /*margin: 0;*/
   margin: 0;  
   padding: 0 1em;  
   list-style: none;  
@@ -117,22 +116,36 @@ ul {
   margin-right: 5px;
 }
 
-.school {
+.school, .company {
   margin-top: 20px; 
 }
 
-.school span {
+.school span, .company span {
   color: #A7B8BF;
   padding-right: 20px;
   font-weight: normal;
+  display: inline-block;
 }
 
-.school .name {
+.school span {
+  min-width: 100px;
+}
+
+.school .name, .company .name {
   font-weight: bold;
 }
 
 .school ul {
   margin-left: 120px;
+  padding: 0;
+}
+
+.company span {
+  min-width: 200px;
+}
+
+.company .details {
+  margin-left: 220px;
 }
 
 footer {
