@@ -43,11 +43,25 @@ header img {
 h1 {
   margin: 1em 0;
   text-transform: uppercase;
+  color: #41807B;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact a {
+  font-size: 2.5em;
+  color: #B4CACB;
+  padding: 30px 10px;
 }
 
 main {
   max-width: 1140px;
-  border-bottom: 30px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #41807B;
 }
 
 h3 {
@@ -110,7 +124,7 @@ ul {
   display:    inline-block;   
   border-top:   solid transparent;
   border-bottom:  solid transparent;
-  border-left: solid #509e98;; 
+  border-left: solid #509e98; 
   border-width: 6px;
   content: ' ';
   margin-right: 5px;
@@ -150,4 +164,18 @@ ul {
 
 footer {
  padding: 1em;
+ text-align: right;
+ background-color: #A7B8BF;
 }
+
+footer a:hover {
+  color: #41807B;
+  font-weight: bold;
+}
+
+footer a:visited   {
+  color: #31625E;
+}
+
+
+
