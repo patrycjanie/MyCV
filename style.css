@@ -56,6 +56,10 @@ h1 {
   padding: 30px 10px;
 }
 
+.contact a:hover {
+  color: #41807B;
+}
+
 main {
   max-width: 1140px;
 }
