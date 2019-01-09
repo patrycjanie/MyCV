@@ -1,10 +1,10 @@
-#First CV
+# First CV
 My first CV created with basic HTML and CSS. 
 
-##Technologies
+## Technologies
 Project is created with:
 * HTML5
 * CSS
 
-##Credits
+## Credits
 Inspired by [@flynerdpl](https://www.flynerd.pl/) - thank you!
