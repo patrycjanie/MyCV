@@ -26,7 +26,7 @@ header {
   text-align: center;
   background-image: url('biurkobg.jpg');
   background-size: cover;
-  background-position: 75% 25%;
+  background-position: 80% 10%;
 }
 
 header section {
@@ -90,13 +90,13 @@ h3 {
   max-width: 33%;
 }
 
-.course .descrition {
+.course .description {
   -ms-flex: 0 0 66.6%;
   flex: 0 0 66.6%;
   max-width: 66.6%;
 }
 
-.course .descrition p {
+.course .description p {
   padding-left: 2em;
   margin-top: 0;
 }
@@ -135,22 +135,35 @@ ul {
   margin-right: 5px;
 }
 
+.languages img {
+  height: 1em;
+  margin-right: 10px;
+}
+
+.languages li {
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+  -ms-flex-align:center;
+}
+
 .school, .company {
   margin-top: 20px; 
 }
 
-.school span, .company span {
+.year {
   color: #A7B8BF;
   padding-right: 20px;
   font-weight: normal;
   display: inline-block;
+  float: left;
 }
 
-.school span {
+.school .year {
   min-width: 100px;
 }
 
-.school .name, .company .name {
+.name {
   font-weight: bold;
 }
 
@@ -159,7 +172,7 @@ ul {
   padding: 0;
 }
 
-.company span {
+.company .year {
   min-width: 200px;
 }
 
@@ -182,5 +195,54 @@ footer a:visited   {
   color: #31625E;
 }
 
+@media only screen and (max-width: 1490px) {
+  header section p {
+    /*width: 80%*/;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .description {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .school .year {
+    float: none;
+  }
+
+  .school ul {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .year {
+    float: none;
+  }
+
+  .school ul, .company .details {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
 
 
