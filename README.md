@@ -7,7 +7,7 @@ Project is created with:
 * CSS
 
 ## Demo
-You can check it out here: [demo](https://patrycjanie.github.io/MyCV/)
+You can check it out here: [Patrycja Niestrój - CV](https://patrycjanie.github.io/MyCV/)
 
 ## Credits
 Emoji flags and favicon - [Favicon.io](https://favicon.io/)
