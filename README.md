@@ -6,5 +6,9 @@ Project is created with:
 * HTML5
 * CSS
 
+## Demo
+You can check it out here: [@demo](https://patrycjanie.github.io/MyCV/)
+
 ## Credits
+Emoji flags and favicon - [@Favicon](https://favicon.io/)
 Inspired by [@flynerdpl](https://www.flynerd.pl/) - thank you!
