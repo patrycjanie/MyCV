@@ -201,7 +201,7 @@ ul {
 }
 
 .col-1-of-3:not(:last-child) {
-  margin-right: 5%;
+  margin-right: 4.5%;
 }
 
 .col-1-of-3 img {
@@ -212,7 +212,7 @@ ul {
 }
 
 .col-1-of-3 img:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .school, .company {
