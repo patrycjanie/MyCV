@@ -35,29 +35,70 @@ header section {
   text-align: justify;
 }
 
-header img {
-  max-width: 150px;
-  border-radius: 50%;
-}
-
 h1 {
-  margin: 1em 0;
+  margin: 4.5em 0 1em 0;
   text-transform: uppercase;
   color: #41807B;
+  line-height: 1.2;
 }
 
 .contact {
   text-align: center;
 }
 
-.contact a {
-  font-size: 2.5em;
+.btn {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f2;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.5);
   color: #B4CACB;
-  padding: 30px 10px;
+  overflow: hidden;
+  position: relative;
 }
 
-.contact a:hover {
-  color: #41807B;
+.btn i{
+  line-height: 50px;
+  font-size: 2rem;
+  transition: .2s linear;
+}
+
+
+.btn:hover i{
+  transform: scale(1.15);
+  color: #f1f1f1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background-color: #41807B; 
+  transform: rotate(45deg);
+  top: 90%;
+  left: -110%;
+}
+
+.btn:hover::before {
+  animation: ani 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes ani {
+  0%{
+    left: -110%;
+    top: 90%;
+  }50%{
+    left: 10%;
+    top: -30%;
+  }100%{
+    top: -10%;
+    left: -10%;
+  }
 }
 
 main {
@@ -101,7 +142,7 @@ h3 {
   margin-top: 0;
 }
 
-.skills h4, .languages h4 {
+.skills h4, .languages h4, .row h4 {
   color: #509e98;
   margin: 0;
 }
@@ -145,6 +186,33 @@ ul {
   display: -ms-flexbox;
   align-items: center;
   -ms-flex-align:center;
+}
+
+.row {
+  max-width: 70em;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.col-1-of-3 {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+.col-1-of-3:not(:last-child) {
+  margin-right: 5%;
+}
+
+.col-1-of-3 img {
+  width: 100%;
+  margin-top: 5px;
+  transition: scale .2s;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, .2);
+}
+
+.col-1-of-3 img:hover {
+  transform: scale(1.1);
 }
 
 .school, .company {
@@ -195,13 +263,38 @@ footer a:visited   {
   color: #31625E;
 }
 
-@media only screen and (max-width: 1490px) {
-  header section p {
-    /*width: 80%*/;
+@media only screen and (min-width: 1300px) {
+  h1 {
+    padding-top: 45px;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  h1 {
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  h1 {
+    padding-top: 80px;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .col-1-of-3 {
+    width: 100%;
+    margin-right: none;
+  }
+
+  .col-1-of-3:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
   .course {
     display: block;
   }
@@ -209,6 +302,8 @@ footer a:visited   {
   .course .title, .course .description {
     max-width: 100%;
   }
+
+  
 }
 
 @media only screen and (max-width: 660px) {
@@ -242,6 +337,12 @@ footer a:visited   {
 
   footer {
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .languages img {
+    
   }
 }
 
